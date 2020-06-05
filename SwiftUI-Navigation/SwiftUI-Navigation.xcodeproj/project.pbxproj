@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		DEDD17682482F82800BBB30E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDD17672482F82800BBB30E /* AppDelegate.swift */; };
 		DEDD176A2482F82800BBB30E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDD17692482F82800BBB30E /* SceneDelegate.swift */; };
-		DEDD176C2482F82800BBB30E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDD176B2482F82800BBB30E /* ContentView.swift */; };
+		DEDD176C2482F82800BBB30E /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDD176B2482F82800BBB30E /* MainView.swift */; };
 		DEDD176E2482F82B00BBB30E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEDD176D2482F82B00BBB30E /* Assets.xcassets */; };
 		DEDD17712482F82B00BBB30E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEDD17702482F82B00BBB30E /* Preview Assets.xcassets */; };
 		DEDD17742482F82B00BBB30E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEDD17722482F82B00BBB30E /* LaunchScreen.storyboard */; };
@@ -30,7 +30,7 @@
 		DEDD17642482F82800BBB30E /* SwiftUI-Navigation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI-Navigation.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEDD17672482F82800BBB30E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DEDD17692482F82800BBB30E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		DEDD176B2482F82800BBB30E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		DEDD176B2482F82800BBB30E /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		DEDD176D2482F82B00BBB30E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DEDD17702482F82B00BBB30E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DEDD17732482F82B00BBB30E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -81,7 +81,7 @@
 			children = (
 				DEDD17672482F82800BBB30E /* AppDelegate.swift */,
 				DEDD17692482F82800BBB30E /* SceneDelegate.swift */,
-				DEDD176B2482F82800BBB30E /* ContentView.swift */,
+				DEDD176B2482F82800BBB30E /* MainView.swift */,
 				DEDD176D2482F82B00BBB30E /* Assets.xcassets */,
 				DEDD17722482F82B00BBB30E /* LaunchScreen.storyboard */,
 				DEDD17752482F82B00BBB30E /* Info.plist */,
@@ -210,7 +210,7 @@
 			files = (
 				DEDD17682482F82800BBB30E /* AppDelegate.swift in Sources */,
 				DEDD176A2482F82800BBB30E /* SceneDelegate.swift in Sources */,
-				DEDD176C2482F82800BBB30E /* ContentView.swift in Sources */,
+				DEDD176C2482F82800BBB30E /* MainView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -66,14 +66,20 @@ struct EmojiContent: View {
 
 
 struct ModalOpener: View {
+    @State var isShowing: Bool = false
+    
     var body: some View {
         Button(action: open) {
             Text("Open a modal")
+        }.sheet(isPresented: $isShowing, onDismiss: {
+            print("Dismissed")
+        }) {
+            ModalContent()
         }
     }
     
     func open() {
-        print("Open")
+        isShowing.toggle()
     }
 }
 
@@ -84,12 +90,14 @@ struct ModalContent: View {
 }
 
 
-
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ForEach(["iPhone SE", "iPhone XS Max"], id: \.self) { deviceName in
-            MainView()
-                .previewDevice(PreviewDevice(rawValue: deviceName))
-        }
+        MainView()
     }
+//    static var previews: some View {
+//        ForEach(["iPhone SE", "iPhone XS Max"], id: \.self) { deviceName in
+//            MainView()
+//                .previewDevice(PreviewDevice(rawValue: deviceName))
+//        }
+//    }
 }
