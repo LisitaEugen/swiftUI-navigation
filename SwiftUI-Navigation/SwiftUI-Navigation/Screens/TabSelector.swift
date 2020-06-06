@@ -9,9 +9,15 @@
 import SwiftUI
 
 struct TabSelector: View {
+    @EnvironmentObject var appData: AppData
+    
     var body: some View {
         VStack {
-            Text("Tab ")
+            Button(action: {
+                self.appData.selectTab(withIndex: 2)
+            }) {
+                Text("Select ze tab")
+            }
         }
     }
 }

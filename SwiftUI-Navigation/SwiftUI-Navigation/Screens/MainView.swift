@@ -9,8 +9,10 @@
 import SwiftUI
 
 struct MainView: View {
+    @EnvironmentObject var appData: AppData
+    
     var body: some View {
-        TabView {
+        TabView(selection: $appData.selectedTab) {
             TabSelector().tabItem({
                 VStack {
                     Image(systemName: "arrow.up.right.diamond")

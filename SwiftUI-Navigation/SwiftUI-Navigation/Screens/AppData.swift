@@ -9,5 +9,10 @@
 import Combine
 
 class AppData: ObservableObject {
-    @Published var emojis: [String] = ["👍", "👏", "😍", "✅", "🌷", "😉", "👎"]
+    @Published private(set) var emojis: [String] = ["👍", "👏", "😍", "✅", "🌷", "😉", "👎"]
+    @Published var selectedTab: Int = 1
+    
+    func selectTab(withIndex index: Int) {
+        selectedTab = index
+    }
 }
