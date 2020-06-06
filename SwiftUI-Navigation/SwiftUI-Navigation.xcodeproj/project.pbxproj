@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DEB82D2A248B8D6500301440 /* TabSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB82D29248B8D6500301440 /* TabSelector.swift */; };
+		DEB82D2D248B8DA200301440 /* EmojiList.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB82D2C248B8DA200301440 /* EmojiList.swift */; };
+		DEB82D2F248B8DC100301440 /* ModalOpener.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB82D2E248B8DC100301440 /* ModalOpener.swift */; };
+		DEB82D31248B8E9E00301440 /* AppData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB82D30248B8E9E00301440 /* AppData.swift */; };
 		DEDD17682482F82800BBB30E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDD17672482F82800BBB30E /* AppDelegate.swift */; };
 		DEDD176A2482F82800BBB30E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDD17692482F82800BBB30E /* SceneDelegate.swift */; };
 		DEDD176C2482F82800BBB30E /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDD176B2482F82800BBB30E /* MainView.swift */; };
@@ -27,6 +31,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DEB82D29248B8D6500301440 /* TabSelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabSelector.swift; sourceTree = "<group>"; };
+		DEB82D2C248B8DA200301440 /* EmojiList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiList.swift; sourceTree = "<group>"; };
+		DEB82D2E248B8DC100301440 /* ModalOpener.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalOpener.swift; sourceTree = "<group>"; };
+		DEB82D30248B8E9E00301440 /* AppData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppData.swift; sourceTree = "<group>"; };
 		DEDD17642482F82800BBB30E /* SwiftUI-Navigation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI-Navigation.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEDD17672482F82800BBB30E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DEDD17692482F82800BBB30E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -58,6 +66,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DEB82D28248B8D3800301440 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				DEDD176B2482F82800BBB30E /* MainView.swift */,
+				DEB82D29248B8D6500301440 /* TabSelector.swift */,
+				DEB82D2C248B8DA200301440 /* EmojiList.swift */,
+				DEB82D2E248B8DC100301440 /* ModalOpener.swift */,
+				DEB82D30248B8E9E00301440 /* AppData.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
 		DEDD175B2482F82800BBB30E = {
 			isa = PBXGroup;
 			children = (
@@ -79,9 +99,9 @@
 		DEDD17662482F82800BBB30E /* SwiftUI-Navigation */ = {
 			isa = PBXGroup;
 			children = (
+				DEB82D28248B8D3800301440 /* Screens */,
 				DEDD17672482F82800BBB30E /* AppDelegate.swift */,
 				DEDD17692482F82800BBB30E /* SceneDelegate.swift */,
-				DEDD176B2482F82800BBB30E /* MainView.swift */,
 				DEDD176D2482F82B00BBB30E /* Assets.xcassets */,
 				DEDD17722482F82B00BBB30E /* LaunchScreen.storyboard */,
 				DEDD17752482F82B00BBB30E /* Info.plist */,
@@ -208,9 +228,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEB82D2A248B8D6500301440 /* TabSelector.swift in Sources */,
 				DEDD17682482F82800BBB30E /* AppDelegate.swift in Sources */,
+				DEB82D2F248B8DC100301440 /* ModalOpener.swift in Sources */,
+				DEB82D2D248B8DA200301440 /* EmojiList.swift in Sources */,
 				DEDD176A2482F82800BBB30E /* SceneDelegate.swift in Sources */,
 				DEDD176C2482F82800BBB30E /* MainView.swift in Sources */,
+				DEB82D31248B8E9E00301440 /* AppData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

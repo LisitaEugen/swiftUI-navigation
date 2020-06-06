@@ -33,63 +33,6 @@ struct MainView: View {
     }
 }
 
-
-struct TabSelector: View {
-    var body: some View {
-        VStack {
-            Text("Tab ")
-        }
-    }
-}
-
-struct EmojiList: View {
-    let emojis: [String] = ["👍", "👏", "😍", "✅", "🌷", "😉", "👎"]
-    var body: some View {
-        NavigationView {
-            List(emojis, id: \.self) { emoji in
-                NavigationLink(destination:
-                                EmojiContent(emoji: emoji)) {
-                    Text("\(emoji)")
-                }
-            }
-            .navigationBarTitle(Text("Emojis"))
-        }
-    }
-}
-
-struct EmojiContent: View {
-    let emoji: String
-    var body: some View {
-        Text("\(emoji)")
-    }
-}
-
-
-struct ModalOpener: View {
-    @State var isShowing: Bool = false
-    
-    var body: some View {
-        Button(action: open) {
-            Text("Open a modal")
-        }.sheet(isPresented: $isShowing, onDismiss: {
-            print("Dismissed")
-        }) {
-            ModalContent()
-        }
-    }
-    
-    func open() {
-        isShowing.toggle()
-    }
-}
-
-struct ModalContent: View {
-    var body: some View {
-        Text("aads")
-    }
-}
-
-
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         MainView()
