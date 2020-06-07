@@ -14,9 +14,9 @@ struct TabSelector: View {
     var body: some View {
         VStack {
             Button(action: {
-                self.appData.selectTab(withIndex: 2)
+                self.appData.selectEmojiTabWith🌷()
             }) {
-                Text("Select ze tab")
+                Text("Select Emoji Tab with 🌷")
             }
         }
     }

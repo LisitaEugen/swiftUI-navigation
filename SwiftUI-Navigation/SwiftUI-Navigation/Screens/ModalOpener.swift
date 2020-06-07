@@ -12,12 +12,14 @@ struct ModalOpener: View {
     @State var isShowing: Bool = false
     
     var body: some View {
-        Button(action: open) {
-            Text("Open a modal")
-        }.sheet(isPresented: $isShowing, onDismiss: {
-            print("Dismissed")
-        }) {
-            ModalContent()
+        VStack {
+            Button(action: open) {
+                Text("Open a modal")
+            }.sheet(isPresented: $isShowing, onDismiss: {
+                print("Dismissed")
+            }) {
+                ModalContent()
+            }
         }
     }
     
@@ -28,7 +30,7 @@ struct ModalOpener: View {
 
 struct ModalContent: View {
     var body: some View {
-        Text("aads")
+        Text("It's a modal!")
     }
 }
 

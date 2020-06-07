@@ -9,10 +9,27 @@
 import Combine
 
 class AppData: ObservableObject {
-    @Published private(set) var emojis: [String] = ["👍", "👏", "😍", "✅", "🌷", "😉", "👎"]
-    @Published var selectedTab: Int = 1
+    struct Emoj: Identifiable {
+        var content: String
+        var id: String {
+            return content
+        }        
+    }
     
-    func selectTab(withIndex index: Int) {
-        selectedTab = index
+    @Published var emojis: [Emoj] = [
+        Emoj(content: "👍"),
+        Emoj(content: "👏"),
+        Emoj(content: "😍"),
+        Emoj(content: "✅"),
+        Emoj(content: "🌷"),
+        Emoj(content: "😉"),
+        Emoj(content: "😉")]
+    //, "👏", "😍", "✅", "🌷", "😉", "👎"
+    @Published var selectedTab: Int = 1
+    @Published var selectedItemId: String? = nil
+    
+    func selectEmojiTabWith🌷() {
+        selectedTab = 1
+        selectedItemId = "🌷"
     }
 }
