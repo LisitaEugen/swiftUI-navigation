@@ -30,16 +30,13 @@ struct EmojiList: View {
     
     var body: some View {
         NavigationView {
-//            ZStack {
-//                navigationLink // magic
+            ZStack {
+                navigationLink // magic
                 List(appData.emojis) { emoji in
-                    NavigationLink(destination:
-                    EmojiContent(emoji: emoji.content)) {
-                        Button(action: {
-                            self.appData.selectedItemId = emoji.id
-                        }) {
-                            Text("\(emoji.content)")
-                        }
+                    Button(action: {
+                        self.appData.selectedItemId = emoji.id
+                    }) {
+                        Text("\(emoji.content)")
                     }
                     .listRowBackground(
                         // if in split view, set selected background color
@@ -47,10 +44,8 @@ struct EmojiList: View {
                     )
                 }.navigationBarTitle(Text("Emojis"))
             }
-//        }
+        }.navigationViewStyle(StackNavigationViewStyle())
     }
-    
-    
 }
 
 struct EmojiContent: View {
