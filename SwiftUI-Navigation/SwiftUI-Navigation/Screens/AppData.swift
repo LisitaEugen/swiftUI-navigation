@@ -25,7 +25,7 @@ class AppData: ObservableObject {
         Emoj(content: "😉"),
         Emoj(content: "😉")]
     //, "👏", "😍", "✅", "🌷", "😉", "👎"
-    @Published var selectedTab: Int = 1
+    @Published var selectedTab: Int = 0
     @Published var selectedItemId: String? = nil
     
     func selectEmojiTabWith🌷() {

@@ -11,13 +11,14 @@ import SwiftUI
 struct EmojiList: View {
     
     @EnvironmentObject var appData: AppData
+    @Environment(\.horizontalSizeClass) var horizontalSizeClass
     
     var navigationLink: NavigationLink<EmptyView, EmojiContent>? {
         guard let selectedItemId = appData.selectedItemId,
             let selectedItem = appData.emojis.first(where: {$0.id == selectedItemId}) else {
                 return nil
         }
-        
+
         return NavigationLink(
             destination: EmojiContent(emoji: selectedItem.content),
             tag:  selectedItemId,
@@ -37,6 +38,10 @@ struct EmojiList: View {
                     }) {
                         Text("\(emoji.content)")
                     }
+                    .listRowBackground(
+                        // if in split view, set selected background color
+                        (self.appData.selectedItemId == emoji.id && self.horizontalSizeClass == .regular) ?  Color.blue : Color(UIColor.systemBackground)
+                    )
                 }
             }.navigationBarTitle(Text("Emojis"))
         }
